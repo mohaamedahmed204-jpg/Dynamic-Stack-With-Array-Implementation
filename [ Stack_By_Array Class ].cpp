@@ -3,15 +3,14 @@
 
 using namespace std;
 
-int main()
-{
-    clsMyStackArr <short> MyStack;
+int main() {
+    clsMyStackArr <int> MyStack;
 
-    MyStack.Push(10);
-    MyStack.Push(20);
-    MyStack.Push(30);
-    MyStack.Push(40);
-    MyStack.Push(50);
+    MyStack.Push(100);
+    MyStack.Push(200);
+    MyStack.Push(300);
+    MyStack.Push(400);
+    MyStack.Push(500);
 
     cout << "\nStack :\n";
     MyStack.Print();
@@ -50,6 +49,5 @@ int main()
     cout << "\n\nStack after Clear() :\n";
     MyStack.Print();
 
-    system("pause>0");
     return 0;
 }
