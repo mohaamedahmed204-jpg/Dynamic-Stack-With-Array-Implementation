@@ -39,4 +39,27 @@ The architecture is divided into two decoupled header layers:
 
    `InsertAt(size_t index, T Value)`: Expands the array buffer by 1, shifts elements right of index forward, and inserts Value at the target index.
 
-   
+   `InsertAtBeginning(T Value) / InsertAtEnd(T Value)`: 
+Specialized insertion routines calling InsertAt at position 0 or position _Size.
+
+   `InsertBefore(size_t index, T Value) / InsertAfter(size_t index, T Value)`: 
+Helper methods that safely calculate boundary indices to insert relative to existing positions.
+
+   `DeleteItemAt(int index)` :
+Reduces array allocation by 1, copies left and right segments relative to index, and frees previous memory.
+
+   `DeleteFirstItem() / DeleteLastItem()`: 
+Delegates element deletion safely to DeleteItemAt using reusable index strategies.
+
+   `Find(T Item)`: 
+Executes a linear search O(N) through elements to locate Item and returns its zero-based index or -1 if absent.
+
+   `DeleteItem(T Item)`: 
+Finds the target element's index via Find() and removes it using DeleteItemAt().
+
+   `Reverse()`:
+Reverses array contents in-place with $O(N)$ time complexity using mirror-swapping (`swap(DynamicArray[i], DynamicArray[_Size - 1 - i])`).
+
+   `Clear()` :
+Deallocates heap memory, resets DynamicArray to nullptr, and clears array size to zero.
+
