@@ -63,3 +63,45 @@ Reverses array contents in-place with $O(N)$ time complexity using mirror-swappi
    `Clear()` :
 Deallocates heap memory, resets DynamicArray to nullptr, and clears array size to zero.
 
+
+2. `clsMyStackArr<T>` Operations
+    
+   `push(T Item)`: Pushes an element to the top of the stack (position 0) via `InsertAtBeginning`.
+
+   `pop()`: Removes the top element of the stack using `DeleteFirstItem`.
+
+   `Top()`: Returns the top element without removing it. Returns a default-constructed `T()` if the stack is empty.
+
+   `Size()`: Returns the current count of elements inside the stack.
+
+   `IsEmpty()`: Returns `true` if stack contains zero elements; `false` otherwise.
+
+   `Clear()`: Clears all stack data and deallocates memory buffer.
+
+## 🎯 Key Concepts Demonstrated
+
+Manual Heap Memory Management: Direct utilization of `new[]` and `delete[]` keywords without memory leaks.
+
+Generic Programming (Templates): Implementation using `template <class T>` to allow type flexibility (supports primitives and user-defined objects).
+
+RAII (Resource Acquisition Is Initialization): Automatic memory cleanup inside destructors (`~clsDynamicArray()`) to avoid dangling resources when object lifetime ends.
+
+Pointer Arithmetic & Raw Array Manipulation: Explicit index handling and buffer swapping.
+
+Code Reusability & Software Abstraction: Wrapping continuous container logic inside dedicated interfaces.
+
+## 🛠 Technologies
+
+anguage: C++ (C++11 or higher recommended)
+
+Standard Library Components Used: `<iostream>`, `std::swap`, `std::min`
+
+Paradigm: Object-Oriented Programming (OOP) & Generic Programming
+
+## 👨‍🏫 Instructor
+
+Dr. Mohammed Abu-Hadhoud
+Founder & Instructor — Programming Advices
+
+Programming Advices
+https://programmingadvices.com
