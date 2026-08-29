@@ -1,4 +1,4 @@
-# Dynamic-Stack-With-Array-Implementation
+# Dynamic-Stack-With-Array-Implementation. 
 
 A generic, low-level implementation of a custom dynamic array (`clsDynamicArray`) and an array-based stack (`clsMyStackArr`) using C++ templates. This project demonstrates manual memory management, template metaprogramming, pointer manipulation, and Object-Oriented Design (OOD) principles without relying on standard sequence containers like `std::vector` or `std::stack`.
 
