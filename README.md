@@ -100,8 +100,8 @@ Paradigm: Object-Oriented Programming (OOP) & Generic Programming
 
 ## 👨‍🏫 Instructor
 
-Dr. Mohammed Abu-Hadhoud
-Founder & Instructor — Programming Advices
+* Dr. Mohammed Abu-Hadhoud
+* Founder & Instructor — Programming Advices
 
 Programming Advices
 https://programmingadvices.com
